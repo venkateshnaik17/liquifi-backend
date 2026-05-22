@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/liquifi_dev
+    username: liquifi
+    password: liquifi_dev_pass
+  jpa:
+    show-sql: true
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password:
+
+liquifi:
+  cors:
+    allowed-origins: http://localhost:5173
+
+logging:
+  level:
+    com.liquifi: DEBUG
+    org.springframework.web: DEBUG
